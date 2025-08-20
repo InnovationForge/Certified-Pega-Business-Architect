@@ -1,90 +1,70 @@
-# **Reporting**
-Reporting in Pega empowers users to make informed decisions through real-time data insights. This chapter introduces the benefits of using Insights, how to create visualizations with tables and charts, and how to refine reports using columns, filters, and sorting. You'll learn how to design reports that are both informative and actionable, tailored to the needs of different personas.
+# Chapter 7: Reporting
+
+## Introduction
+Reporting in Pega enables users to gain insights into case data, monitor performance, and support decision-making. Business Architects configure reports using App Studio to ensure stakeholders have access to relevant, real-time information.
 
 ---
 
-## 🟨 **1. Benefits of Using Insights**
+## Insights
+Insights are reusable, role-based reports that display key metrics and trends.
 
-### ✅ Definition:
-**Insights** in Pega are real-time, interactive reports that allow users to explore data visually and dynamically. They are part of the **Pega Reporting** framework and are accessible via **App Studio**.
+- **Use Cases**:
+    - Track open cases by status
+    - Monitor SLA compliance
+    - View workload by operator
 
-### ✅ Key Benefits:
-- **Real-Time Data Access**: Insights reflect the most current data from the application.
-- **Self-Service Reporting**: Business users can create and modify reports without technical help.
-- **Interactive Exploration**: Drill down into data, apply filters, and sort results on the fly.
-- **Visualization Support**: Easily switch between tables, charts, and graphs.
-- **Role-Based Access**: Insights can be tailored to specific personas or portals.
-
-### ✅ Real-World Example:
-A Customer Service Manager uses Insights to monitor open cases by region, identify bottlenecks, and reassign work to balance workloads.
-
-### ✅ Tip:
-Use Insights to **empower business users** with data-driven decision-making without relying on IT.
+Insights can be embedded in dashboards and portals for easy access.
 
 ---
 
-## 🟨 **2. Create Visualizations Using Tables and Charts**
+## Visualizations
 
-### ✅ Visualization Types:
-- **Tables**: Display data in rows and columns; ideal for detailed views.
-- **Charts**: Summarize data visually; useful for trends and comparisons.
+Visualizations enhance the readability and impact of reports by presenting data graphically.
 
-### ✅ Chart Types Supported:
-- Bar chart
-- Line chart
-- Pie chart
-- Donut chart
-- Column chart
+- **Types of Visualizations**:
+    - **Tables**: Default format for listing records
+    - **Bar Charts**: Compare values across categories
+    - **Pie Charts**: Show proportions of a whole
+    - **Line Charts**: Track trends over time
 
-### ✅ How to Create:
-- Select a **data source** (e.g., case type, data object).
-- Choose **fields** to display.
-- Apply **grouping and aggregation** (e.g., count of cases by status).
-- Select a **chart type** based on the data and audience.
-
-### ✅ Real-World Example:
-A dashboard shows:
-- A **bar chart** of cases by priority
-- A **pie chart** of resolved vs unresolved cases
-- A **table** listing overdue cases with SLA breaches
-
-### ✅ Tip:
-Use charts for **high-level summaries** and tables for **detailed analysis**.
+Choose the visualization type based on the story you want the data to tell.
 
 ---
 
-## 🟨 **3. Use Columns, Filters, and Sorting**
+## Filters
 
-### ✅ Columns:
-- Represent individual data fields (e.g., Case ID, Status, Assigned To).
-- Can be added or removed to customize the report view.
+Filters allow users to narrow down report results based on specific criteria.
 
-### ✅ Filters:
-- Narrow down data based on conditions (e.g., Status = “Open”, Region = “EMEA”).
-- Support multiple filter criteria.
+- **Examples**:
+    - Show only cases with status = “Pending”
+    - Filter by date range or assigned operator
 
-### ✅ Sorting:
-- Organize data in ascending or descending order (e.g., by Date Created, Priority).
-- Helps identify top performers, oldest cases, etc.
-
-### ✅ Real-World Example:
-A report on loan applications:
-- Columns: Applicant Name, Loan Amount, Status
-- Filters: Status = “Pending”, Loan Amount > €10,000
-- Sorting: By Loan Amount (descending)
-
-### ✅ Tip:
-Use filters and sorting to **focus on actionable data** and reduce noise.
+Filters can be predefined or configured by users at runtime, improving report flexibility and relevance.
 
 ---
 
-## ✅ Summary Tips for Exam Success:
+## Sorting
 
-- Understand the **purpose and benefits of Insights** in empowering business users.
-- Be able to **choose appropriate visualizations** based on the reporting need.
-- Know how to **customize reports** using columns, filters, and sorting.
-- Expect scenario-based questions asking you to **design or interpret reports** for specific personas or business goals.
+Sorting organizes report results in a meaningful order.
+
+- **Examples**:
+    - Sort by creation date (newest first)
+    - Sort by priority or SLA deadline
+
+Sorting helps users quickly identify the most important or urgent items in a report.
 
 ---
 
-Would you like a **sample dashboard layout**, a **practice quiz**, or a **cheat sheet** summarizing reporting features and best practices?
+## Dashboards
+Dashboards provide a consolidated view of multiple insights and widgets.
+
+- **Use Cases**:
+    - Manager dashboards showing team performance
+    - Case worker dashboards with assigned tasks and KPIs
+
+Dashboards can be customized per persona to align with role-specific needs.
+
+---
+
+## Summary
+Reporting in Pega empowers users to make informed decisions through real-time insights, visualizations, and dashboards. By configuring filters, sorting, and visual formats, Business Architects ensure that reports are both actionable and user-friendly.

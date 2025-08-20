@@ -1,192 +1,137 @@
-# **Case Management**
-Case Management is at the heart of Pega’s application design. It enables you to model business processes as structured workflows that reflect real-world scenarios. This chapter explores how to design case lifecycles, manage tasks, automate decisions, and handle exceptions like skipping stages or pausing cases. You'll also learn how to route work, configure SLAs, and enhance user interactions through optional actions and child cases.
+# Chapter 2: Case Management
 
-
-## **1. Design a Case Lifecycle, Set Case Statuses, Add Instructions to Tasks**
-
-### ✅ Definition:
-A **case lifecycle** defines the stages and steps a case follows from creation to resolution.
-
-### ✅ Key Concepts:
-- **Stages**: Major milestones (e.g., "Intake", "Approval", "Resolution").
-- **Steps**: Tasks within stages (e.g., "Collect Info", "Review Request").
-- **Case Status**: Indicates progress (e.g., "New", "Pending-Approval", "Resolved-Completed").
-- **Instructions**: Help users understand what to do at each step.
-
-### ✅ Best Practices:
-- Use **clear, business-friendly names** for stages and steps.
-- Set **status updates** at key transition points.
-- Add **instructions** to guide users, especially for manual tasks.
+## Introduction
+Case Management in Pega enables organizations to model and automate business processes as structured workflows. It allows users to manage work through stages, steps, and rules that reflect real-world scenarios.
 
 ---
 
-## **2. Add a Service Level Agreement (SLA); Configure Urgency, Goals, Deadlines, Passed Deadlines**
+## Case Lifecycle
+The case lifecycle defines the path a case follows from creation to resolution. It is composed of stages and steps that represent the business process.
 
-### ✅ Definition:
-An **SLA** defines time expectations for completing tasks or cases.
-
-### ✅ SLA Components:
-- **Goal**: Ideal time to complete (e.g., 2 hours).
-- **Deadline**: Maximum acceptable time (e.g., 4 hours).
-- **Passed Deadline**: Time after the deadline (e.g., escalation).
-- **Urgency**: Numeric value (0–100) that influences prioritization.
-
-### ✅ Real-World Example:
-For a customer complaint case:
-- Goal: Respond within 1 day.
-- Deadline: Resolve within 3 days.
-- Passed Deadline: Notify manager.
-
-### ✅ Tip:
-Use **escalation actions** (e.g., reassign, notify) to handle missed deadlines.
+- **Stages**: High-level phases of work (e.g., Intake, Review, Approval).
+- **Steps**: Tasks or actions within each stage.
 
 ---
 
-## **3. Route Assignments to Users, Work Groups, Work Queues**
+## Stages and Steps
+Stages organize work into meaningful phases. Steps within stages can be:
 
-### ✅ Routing Options:
-- **To a specific user**: Direct assignment.
-- **To a work group**: Group of users with shared responsibilities.
-- **To a work queue**: Tasks are placed in a queue for users to pick up.
-
-### ✅ Best Practices:
-- Use **skill-based routing** for specialized tasks.
-- Use **round-robin or load balancing** for even distribution.
-- Ensure **work queues** are monitored to avoid bottlenecks.
+- **Processes**: Groups of steps that execute together.
+- **Single Steps**: Individual actions like collecting information or performing a decision.
 
 ---
 
-## **4. Configure and Send Email Correspondence**
+## Automation Shapes
 
-### ✅ Use Cases:
-- Notify users of case updates.
-- Send confirmations to customers.
-- Escalate issues to managers.
+Automation shapes streamline case progression by executing predefined actions automatically. Common automation shapes include:
 
-### ✅ Configuration:
-- Use **correspondence rules**.
-- Include **dynamic content** (e.g., case ID, status).
-- Trigger emails on **events** (e.g., stage entry, SLA breach).
+- **Change Stage**: Moves a case to a different stage based on conditions.
+- **Change Case Status**: Updates the case status (e.g., from "Pending" to "Resolved").
+- **Update Case**: Modifies data in the current or related case.
+- **Create Case**: Instantiates a new child or peer case.
+- **Post to Pulse**: Adds a message to the case's Pulse feed for collaboration.
 
----
-
-## **5. Identify Duplicate Cases**
-
-### ✅ Purpose:
-Prevent redundant work and ensure data integrity.
-
-### ✅ Methods:
-- Use **duplicate case search** based on key fields (e.g., email, ID).
-- Configure **match rules** to define what constitutes a duplicate.
-
-### ✅ Tip:
-Prompt users with a warning or merge option when duplicates are found.
+These shapes reduce manual effort and ensure consistent behavior across cases.
 
 ---
 
-## **6. Identify and Add Optional Actions**
+## Skip Stage / Skip Process
 
-### ✅ Definition:
-**Optional actions** are tasks users can perform outside the main flow.
+Pega allows skipping stages or processes based on business logic or user input. This enhances flexibility in case flows.
 
-### ✅ Examples:
-- Update contact info.
-- Add supporting documents.
-- Request supervisor review.
+- **Skip Stage**: Configured using conditions in the stage rule or via automation shapes.
+- **Skip Process**: Applied within a stage to bypass specific steps or subprocesses.
 
-### ✅ Configuration:
-- Add as **case-wide actions** or **stage-specific actions**.
+Use cases include:
+- Fast-tracking VIP customer requests.
+- Bypassing approval for low-risk transactions.
 
----
-
-## **7. Add Optional Actions to a Workflow**
-
-### ✅ Implementation:
-- Use **optional processes** or **optional steps**.
-- Display as buttons or links in the UI.
-
-### ✅ Tip:
-Ensure optional actions are **clearly labeled** and **accessible** without disrupting the main flow.
+Skipping logic should be clearly documented to ensure transparency and auditability.
 
 ---
 
-## **8. Automate Workflow Decisions Using Conditions**
+## Wait Steps
 
-### ✅ Use Cases:
-- Route based on case data (e.g., loan amount).
-- Skip steps if not applicable (e.g., no documents required).
+Wait steps introduce pauses in case progression until a condition is met. They help synchronize with external events or dependencies.
 
-### ✅ Tools:
-- **When rules**: Boolean expressions.
-- **Decision tables/trees**: Structured logic.
-- **Conditions on stages/steps**: Control visibility and execution.
+Types of wait steps:
+- **Wait for Time**: Delays case for a set duration.
+- **Wait for Case**: Pauses until a child or related case reaches a specific status.
+- **Wait for Event**: Triggers continuation based on a business event or signal.
 
----
-
-## **9. Pause and Resume Case Processing; Wait Steps**
-
-### ✅ Purpose:
-Handle scenarios where external input or time delay is needed.
-
-### ✅ Wait Types:
-- **Wait for time**: Pause for a set duration.
-- **Wait for event**: Resume when a child case or external signal completes.
-
-### ✅ Tip:
-Use **wait steps** to model real-world delays (e.g., waiting for customer response).
+Wait steps improve orchestration in complex workflows.
 
 ---
 
-## **10. Skip a Stage or Process**
+## Routing
+Routing determines how assignments are delivered to users or work queues. Common routing options include:
 
-### ✅ Use Case:
-Skip unnecessary stages based on conditions (e.g., fast-track approvals).
+- **To a specific user**
+- **To a work queue**
+- **Based on business logic or roles**
 
-### ✅ Configuration:
-- Use **when conditions** on stages.
-- Use **skip stage shape** in the flow.
-
----
-
-## **11. Configure Child Cases**
-
-### ✅ Definition:
-**Child cases** are sub-processes that support the main case.
-
-### ✅ Use Cases:
-- Onboarding: Create child cases for equipment setup, training.
-- Insurance: Create child cases for document verification.
-
-### ✅ Configuration:
-- Define **case hierarchy**.
-- Use **case types** and **case relationships**.
+Routing ensures that work reaches the right person at the right time.
 
 ---
 
-## **12. Understand When to Use Automation Shapes**
+## Team Management
 
-### ✅ Automation Shapes:
-- **Change Stage**
-- **Update Case**
-- **Send Email**
-- **Create Case**
-- **Post to Pulse**
+Team management defines how work is distributed among users and roles.
 
-### ✅ Use Cases:
-- Automate transitions, notifications, and data updates.
+Key concepts:
+- **Work Groups**: Logical collections of operators sharing responsibilities.
+- **Work Queues**: Buckets of assignments routed to teams.
+- **Team Roles**: Define access and responsibilities (e.g., Case Worker, Case Manager).
+- **Skill-based Routing**: Assigns tasks based on user skills and availability.
 
-### ✅ Tip:
-Use automation shapes to **reduce manual effort** and **ensure consistency**.
+Effective team setup ensures balanced workloads and faster case resolution.
 
 ---
 
-## **13. Create and Manage Teams of Users**
+## Case Hierarchy
+Cases can be structured hierarchically to reflect dependencies and relationships.
 
-### ✅ Teams in Pega:
-- Defined by **work groups** and **roles**.
-- Managed via **Access Groups** and **Operator IDs**.
+- **Parent Case**: The main case that oversees related work.
+- **Child Case**: A subprocess that supports the parent case.
 
-### ✅ Best Practices:
-- Align teams with **business functions**.
-- Assign **roles and permissions** based on responsibilities.
-- Use **team dashboards** for visibility.
+---
+
+## Child Case Configuration
+
+Child cases can be created manually or automatically using automation shapes.
+
+Key configuration options:
+- **Create Automatically**: Triggered when a stage or step begins.
+- **Create Manually**: Initiated by a user action.
+- **Data Propagation**: Share data between parent and child using data transforms.
+- **Status Synchronization**: Parent case can wait for child case completion using wait steps.
+
+Proper child case design improves modularity and reuse across applications.
+
+---
+
+## Optional Actions
+Optional actions allow users to perform tasks outside the standard case flow, such as:
+
+- **Adding attachments**
+- **Sending correspondence**
+- **Escalating cases**
+
+These actions enhance flexibility and user control.
+
+---
+
+## SLAs
+Service Level Agreements (SLAs) define time expectations for completing assignments or resolving cases.
+
+- **Goal**: Desired completion time.
+- **Deadline**: Maximum allowable time.
+- **Passed Deadline**: Escalation or notification triggers.
+
+SLAs help maintain performance and accountability.
+
+---
+
+## Summary
+Case Management in Pega provides a robust framework for modeling business processes. By leveraging stages, steps, routing, automation, and hierarchy, Business Architects can design scalable and efficient workflows that align with organizational goals.
+
