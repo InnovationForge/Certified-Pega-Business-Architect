@@ -105,3 +105,33 @@ Pega Express follows a **four-phase delivery lifecycle**:
 
 ### ✅ Tip for Exam:
 Expect scenario-based questions asking you to identify which phase certain activities belong to or how to apply terminology in context.
+
+
+### 🔄 **Applying DCO in App Studio: Real-World Examples**
+
+Directly Capture Objectives (DCO) is a cornerstone of the Pega Express methodology. In App Studio, DCO enables Business Architects to collaborate with stakeholders and rapidly translate business needs into working software. Here are some real-world examples of DCO in action:
+
+- **Example 1: Rapid Case Type Design**
+  During a DCO session, a BA works with a Claims Manager to define a new "Insurance Claim" case type. Using App Studio, the BA captures stages like "Intake," "Review," and "Resolution" live during the session, allowing stakeholders to visualize the process instantly.
+
+- **Example 2: Live Persona Mapping**
+  In a workshop with HR and IT teams, the BA uses App Studio to define personas such as "HR Manager" and "Employee." Access roles and UI views are configured on the spot, ensuring alignment with user expectations.
+
+- **Example 3: Real-Time Field Configuration**
+  While discussing a loan application form, the BA adds fields like "Loan Amount" and "Repayment Term" directly in App Studio. Validation rules and field visibility are configured collaboratively, reducing rework.
+
+These examples demonstrate how DCO in App Studio accelerates delivery, improves stakeholder engagement, and ensures business alignment.
+
+---
+
+### 🤝 **Best Practices for Stakeholder Collaboration**
+
+Effective stakeholder collaboration is essential for successful DCO sessions. Here are key best practices:
+
+- **Prepare with Purpose**: Share agendas and pre-read materials before DCO sessions to align expectations.
+- **Facilitate Actively**: Use App Studio as a visual aid to guide discussions and capture feedback in real time.
+- **Speak the Stakeholder’s Language**: Avoid technical jargon; focus on outcomes and user experience.
+- **Validate Frequently**: Use previews and prototypes to confirm understanding and gain early buy-in.
+- **Document Decisions**: Record key agreements and assumptions directly in App Studio or linked documentation.
+
+By following these practices, Business Architects can foster trust, reduce ambiguity, and drive faster consensus.
