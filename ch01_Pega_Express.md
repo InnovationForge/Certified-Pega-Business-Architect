@@ -68,3 +68,97 @@ Pega Express empowers teams to deliver business value quickly and collaborativel
 A multinational company wants to streamline its employee onboarding process. During the **Discover phase**, the BA conducts DCO sessions with HR and IT stakeholders to define the onboarding journey. In **Prepare**, the BA uses the **Case Type Backlog** to prioritize features like document upload, training assignment, and welcome email. The **Build** phase involves configuring stages in App Studio, and in **Adopt**, the BA supports UAT and feedback collection.
 
 **Key Concepts**: DCO, delivery phases, backlog, stakeholder collaboration
+
+Here are **sample multiple-choice questions** for the **Pega Express** chapter, designed to reflect the key concepts and focus areas relevant to the **Certified Pega Business Architect 24.2 exam**. These questions cover methodology, tools, roles, and best practices.
+
+---
+
+## Practice Exam-Style Questions
+
+[//]: # (### **CPBA Practice Questions – Pega Express**)
+
+### **Question 1**
+Which phase of Pega Express focuses on understanding business outcomes and identifying Microjourneys®?
+
+A. Prepare  
+B. Build  
+C. Discover  
+D. Adopt
+
+---
+
+### **Question 2**
+What is the primary purpose of Directly Capture Objectives (DCO)?
+
+A. To automate case routing  
+B. To define security roles  
+C. To gather requirements collaboratively  
+D. To deploy applications
+
+---
+
+### **Question 3**
+Which tool in App Studio helps Business Architects prioritize features and track delivery progress?
+
+A. Deployment Manager  
+B. Case Type Backlog  
+C. Estimator Tool  
+D. Integration Designer
+
+---
+
+### **Question 4**
+What is the role of the Estimator Tool in Pega Express?
+
+A. To validate data models  
+B. To estimate development effort  
+C. To configure SLAs  
+D. To manage access groups
+
+---
+
+### **Question 5**
+Which of the following is a best practice during DCO sessions?
+
+A. Avoid using App Studio during discussions  
+B. Use technical jargon to impress stakeholders  
+C. Capture feedback in real time using App Studio  
+D. Finalize all decisions before stakeholder input
+
+---
+
+### **Question 6**
+In which phase of Pega Express is the application deployed and feedback collected?
+
+A. Discover  
+B. Prepare  
+C. Build  
+D. Adopt
+
+---
+
+### **Question 7**
+Which of the following is NOT a focus area of the Pega Express methodology?
+
+A. Microjourneys®  
+B. Personas  
+C. Data Pages  
+D. Outcomes
+
+---
+
+## ✅ Answer Key with Explanations
+
+| Question | Correct Answer | Explanation |
+|----------|----------------|-------------|
+| 1        | C. Discover     | The Discover phase identifies business outcomes and Microjourneys® to guide solution design. |
+| 2        | C. To gather requirements collaboratively | DCO enables real-time collaboration with stakeholders to capture objectives directly in App Studio. |
+| 3        | B. Case Type Backlog | The Case Type Backlog helps prioritize and manage features during delivery. |
+| 4        | B. To estimate development effort | The Estimator Tool is used to assess the effort required to build features. |
+| 5        | C. Capture feedback in real time using App Studio | Real-time feedback during DCO sessions ensures alignment and reduces rework. |
+| 6        | D. Adopt        | The Adopt phase involves deploying the application and collecting feedback for continuous improvement. |
+| 7        | C. Data Pages   | Data Pages are part of data management, not a core focus of Pega Express methodology. |
+
+---
+
+Would you like me to generate similar question sets for the next chapter (e.g., Case Management)? I can also compile these into a quiz format or printable study guide.

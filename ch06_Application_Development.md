@@ -117,3 +117,129 @@ Application development in Pega empowers Business Architects to deliver value qu
 The BA uses App Studio to design a travel booking case type. The **Case Type Backlog** helps prioritize features like flight selection, payment, and itinerary generation. The **Estimator Tool** is used to assess delivery effort. **Collaboration tools** like Pulse facilitate team communication. The app is deployed using **Deployment Manager** through a **CI/CD pipeline**.
 
 **Key Concepts**: App Studio, backlog, estimator, collaboration, CI/CD
+
+Here are **sample multiple-choice questions** for the **Application Development** chapter, aligned with the Certified Pega Business Architect 24.2 syllabus. These questions cover key concepts such as App Studio, rules and rulesets, Center-out™ design, Case Type Backlog, Estimator Tool, CI/CD, Deployment Manager, and collaboration tools.
+
+---
+
+## Practice Exam-Style Questions
+
+
+### **Question 1**
+What is the primary purpose of App Studio in Pega?
+
+A. To manage deployment pipelines  
+B. To write custom Java code  
+C. To configure applications using a low-code interface  
+D. To monitor system performance
+
+---
+
+### **Question 2**
+Which of the following best describes a ruleset?
+
+A. A list of users assigned to a work group  
+B. A collection of reusable rules grouped for versioning and deployment  
+C. A tool for estimating project timelines  
+D. A type of SLA configuration
+
+---
+
+### **Question 3**
+What is the benefit of Center-out™ business architecture?
+
+A. It focuses on UI design first  
+B. It promotes reuse of business logic across channels  
+C. It eliminates the need for personas  
+D. It replaces the need for case types
+
+---
+
+### **Question 4**
+Which tool helps Business Architects prioritize features and track delivery progress?
+
+A. Deployment Manager  
+B. Case Type Backlog  
+C. Integration Designer  
+D. Access Group Manager
+
+---
+
+### **Question 5**
+What is the purpose of the Estimator Tool in Pega?
+
+A. To calculate SLA deadlines  
+B. To estimate the effort required to build features  
+C. To validate data models  
+D. To configure access roles
+
+---
+
+### **Question 6**
+Which of the following is a key benefit of using Deployment Manager?
+
+A. It allows users to configure UI layouts  
+B. It automates the build and deployment process  
+C. It manages access groups and roles  
+D. It creates data pages for integrations
+
+---
+
+### **Question 7**
+What is the role of the CI/CD pipeline in Pega?
+
+A. To define case types and personas  
+B. To automate testing and deployment across environments  
+C. To configure SLA escalation paths  
+D. To manage user authentication
+
+---
+
+### **Question 8**
+Which collaboration tool allows team members to communicate directly within a case?
+
+A. Estimator Tool  
+B. Pulse  
+C. Integration Designer  
+D. SLA Monitor
+
+---
+
+### **Question 9**
+Which of the following is NOT typically configured in App Studio?
+
+A. Case types and stages  
+B. Personas and portals  
+C. Data models and views  
+D. Java-based connectors
+
+---
+
+### **Question 10**
+What is the benefit of using reusable rules in application development?
+
+A. They reduce the need for testing  
+B. They simplify authentication  
+C. They promote consistency and reduce duplication  
+D. They eliminate the need for access groups
+
+---
+
+## ✅ Answer Key with Explanations
+
+| Question | Correct Answer | Explanation |
+|----------|----------------|-------------|
+| 1        | C. To configure applications using a low-code interface | App Studio is the primary low-code environment for BAs. |
+| 2        | B. A collection of reusable rules grouped for versioning and deployment | Rulesets organize rules for reuse and version control. |
+| 3        | B. It promotes reuse of business logic across channels | Center-out™ focuses on building logic centrally for reuse. |
+| 4        | B. Case Type Backlog | This tool helps prioritize and manage case types and features. |
+| 5        | B. To estimate the effort required to build features | The Estimator Tool supports planning and resource estimation. |
+| 6        | B. It automates the build and deployment process | Deployment Manager supports CI/CD pipelines. |
+| 7        | B. To automate testing and deployment across environments | CI/CD ensures consistent, automated delivery. |
+| 8        | B. Pulse | Pulse enables in-app collaboration and messaging. |
+| 9        | D. Java-based connectors | These are configured in Dev Studio, not App Studio. |
+| 10       | C. They promote consistency and reduce duplication | Reusable rules improve maintainability and efficiency. |
+
+---
+
+Would you like me to generate similar question sets for the final chapter (e.g., Reporting)? I can also compile all chapter quizzes into a single study guide or interactive format.

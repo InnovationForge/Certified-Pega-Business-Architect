@@ -142,3 +142,128 @@ Case Management in Pega provides a robust framework for modeling business proces
 An insurance provider wants to automate claim handling. The BA designs a case type with stages: **Intake**, **Assessment**, **Approval**, and **Resolution**. A **child case** is created for fraud investigation if flagged. **Automation shapes** like “Change Stage” and “Update Case” are used to streamline transitions. A **wait step** pauses the case until the fraud check completes. Routing is configured based on **team roles** and **skills**.
 
 **Key Concepts**: Case lifecycle, child cases, automation shapes, routing, wait steps
+
+Here are **sample multiple-choice questions** for the **Case Management** chapter, aligned with the Certified Pega Business Architect 24.2 syllabus. These questions cover key concepts such as case lifecycle, automation, routing, child cases, SLAs, and team management.
+
+---
+
+## Practice Exam-Style Questions
+
+### **Question 1**
+Which of the following best describes a stage in a Pega case lifecycle?
+
+A. A single task performed by a user  
+B. A reusable rule that defines data  
+C. A high-level phase of work in a case  
+D. A condition used to route assignments
+
+---
+
+### **Question 2**
+What is the purpose of a wait step in a case flow?
+
+A. To skip a stage based on business logic  
+B. To pause case progression until a condition is met  
+C. To route a case to a work queue  
+D. To update a case status automatically
+
+---
+
+### **Question 3**
+Which automation shape is used to change the status of a case?
+
+A. Change Stage  
+B. Update Case  
+C. Change Case Status  
+D. Post to Pulse
+
+---
+
+### **Question 4**
+What is a child case typically used for?
+
+A. To replace the parent case  
+B. To perform a subprocess that supports the parent case  
+C. To store user preferences  
+D. To manage access groups
+
+---
+
+### **Question 5**
+Which routing method assigns tasks based on user skills?
+
+A. Route to Operator  
+B. Route to Work Queue  
+C. Route to Skill  
+D. Route to Role
+
+---
+
+### **Question 6**
+What does skipping a stage in a case lifecycle allow?
+
+A. Repeating the same stage multiple times  
+B. Bypassing unnecessary steps based on conditions  
+C. Automatically resolving the case  
+D. Creating a child case
+
+---
+
+### **Question 7**
+Which of the following is NOT a valid use of a service level agreement (SLA)?
+
+A. To define the goal and deadline for completing a task  
+B. To route a case to a different user  
+C. To trigger escalation when deadlines are missed  
+D. To monitor performance against time expectations
+
+---
+
+### **Question 8**
+What is the role of a work group in team management?
+
+A. To define the portal layout  
+B. To group related data objects  
+C. To organize operators who share responsibilities  
+D. To configure access roles
+
+---
+
+### **Question 9**
+Which configuration allows a parent case to wait for a child case to complete?
+
+A. Routing rule  
+B. Wait step  
+C. Data transform  
+D. SLA escalation
+
+---
+
+### **Question 10**
+What is the benefit of using automation shapes in a case flow?
+
+A. They allow manual data entry  
+B. They simplify UI design  
+C. They reduce manual effort and enforce consistency  
+D. They configure access groups
+
+---
+
+## ✅ Answer Key with Explanations
+
+| Question | Correct Answer | Explanation |
+|----------|----------------|-------------|
+| 1        | C. A high-level phase of work in a case | Stages represent major phases in the case lifecycle. |
+| 2        | B. To pause case progression until a condition is met | Wait steps delay case flow until a time/event/case condition is satisfied. |
+| 3        | C. Change Case Status | This shape updates the status of a case automatically. |
+| 4        | B. To perform a subprocess that supports the parent case | Child cases handle specific tasks that contribute to the parent case. |
+| 5        | C. Route to Skill | Skill-based routing assigns tasks based on user capabilities. |
+| 6        | B. Bypassing unnecessary steps based on conditions | Skip logic allows dynamic case progression. |
+| 7        | B. To route a case to a different user | SLAs are for time-based tracking, not routing. |
+| 8        | C. To organize operators who share responsibilities | Work groups help manage team assignments and queues. |
+| 9        | B. Wait step | Wait steps can pause a parent case until a child case reaches a specific status. |
+| 10       | C. They reduce manual effort and enforce consistency | Automation shapes streamline case behavior without user intervention. |
+
+---
+
+Would you like me to generate similar question sets for the next chapter (e.g., Data & Integration)? I can also compile these into a quiz format or printable study guide.
