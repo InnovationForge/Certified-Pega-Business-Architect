@@ -69,8 +69,6 @@ A multinational company wants to streamline its employee onboarding process. Dur
 
 **Key Concepts**: DCO, delivery phases, backlog, stakeholder collaboration
 
-Here are **sample multiple-choice questions** for the **Pega Express** chapter, designed to reflect the key concepts and focus areas relevant to the **Certified Pega Business Architect 24.2 exam**. These questions cover methodology, tools, roles, and best practices.
-
 ---
 
 ## Practice Exam-Style Questions
