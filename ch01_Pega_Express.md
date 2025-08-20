@@ -61,3 +61,10 @@ To maximize the value of Pega Express, Business Architects should:
 ## Summary
 Pega Express empowers teams to deliver business value quickly and collaboratively. By following its phased approach and leveraging DCO in App Studio, Business Architects can ensure that applications meet user needs and are built for scale and reuse.
 
+## Practice Scenarios
+
+**Scenario: Launching a New Employee Onboarding App**
+
+A multinational company wants to streamline its employee onboarding process. During the **Discover phase**, the BA conducts DCO sessions with HR and IT stakeholders to define the onboarding journey. In **Prepare**, the BA uses the **Case Type Backlog** to prioritize features like document upload, training assignment, and welcome email. The **Build** phase involves configuring stages in App Studio, and in **Adopt**, the BA supports UAT and feedback collection.
+
+**Key Concepts**: DCO, delivery phases, backlog, stakeholder collaboration

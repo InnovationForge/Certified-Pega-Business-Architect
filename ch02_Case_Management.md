@@ -135,3 +135,10 @@ SLAs help maintain performance and accountability.
 ## Summary
 Case Management in Pega provides a robust framework for modeling business processes. By leveraging stages, steps, routing, automation, and hierarchy, Business Architects can design scalable and efficient workflows that align with organizational goals.
 
+## Practice Scenarios
+
+**Scenario: Insurance Claim Processing**
+
+An insurance provider wants to automate claim handling. The BA designs a case type with stages: **Intake**, **Assessment**, **Approval**, and **Resolution**. A **child case** is created for fraud investigation if flagged. **Automation shapes** like “Change Stage” and “Update Case” are used to streamline transitions. A **wait step** pauses the case until the fraud check completes. Routing is configured based on **team roles** and **skills**.
+
+**Key Concepts**: Case lifecycle, child cases, automation shapes, routing, wait steps

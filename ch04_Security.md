@@ -70,3 +70,11 @@ Roles are assigned within access groups and can be reused across applications.
 
 ## Summary
 Security in Pega is a layered approach involving personas, access groups, roles, and authentication mechanisms. Business Architects ensure that users have the right access to perform their tasks while maintaining data protection and compliance.
+
+## Practice Scenarios
+
+**Scenario: Role-Based Access for a Healthcare App**
+
+In a healthcare app, the BA defines **personas** for Nurse, Doctor, and Admin. Each persona has a tailored portal. **Access groups** are configured to restrict sensitive data (e.g., only doctors can view diagnosis history). **Authentication** is handled via SSO, while **authorization** ensures only authorized users can approve prescriptions.
+
+**Key Concepts**: Personas, access groups, authentication vs authorization

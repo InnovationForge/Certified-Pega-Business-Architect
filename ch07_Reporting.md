@@ -68,3 +68,11 @@ Dashboards can be customized per persona to align with role-specific needs.
 
 ## Summary
 Reporting in Pega empowers users to make informed decisions through real-time insights, visualizations, and dashboards. By configuring filters, sorting, and visual formats, Business Architects ensure that reports are both actionable and user-friendly.
+
+## Practice Scenarios
+
+**Scenario: SLA Monitoring Dashboard**
+
+A manager wants to monitor SLA compliance. The BA creates **Insights** showing overdue cases by department. **Filters** allow viewing by date range or case type. **Sorting** highlights the most delayed cases. **Visualizations** like bar charts and pie charts make trends easy to interpret.
+
+**Key Concepts**: Insights, filters, sorting, visualizations

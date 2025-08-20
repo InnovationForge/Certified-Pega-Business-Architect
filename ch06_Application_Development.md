@@ -109,3 +109,11 @@ Business Architects can collaborate with developers to define deployment workflo
 
 ## Summary
 Application development in Pega empowers Business Architects to deliver value quickly and collaboratively. By leveraging App Studio, reusable rules, planning tools like the Case Type Backlog and Estimator, and DevOps practices like CI/CD, teams can build scalable applications aligned with business goals.
+
+## Practice Scenarios
+
+**Scenario: Building a Travel Booking App**
+
+The BA uses App Studio to design a travel booking case type. The **Case Type Backlog** helps prioritize features like flight selection, payment, and itinerary generation. The **Estimator Tool** is used to assess delivery effort. **Collaboration tools** like Pulse facilitate team communication. The app is deployed using **Deployment Manager** through a **CI/CD pipeline**.
+
+**Key Concepts**: App Studio, backlog, estimator, collaboration, CI/CD

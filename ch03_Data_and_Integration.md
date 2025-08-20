@@ -114,3 +114,11 @@ Data transforms are reusable and can be invoked in processes or actions.
 
 ## Summary
 Data and Integration in Pega empower Business Architects to design robust, scalable applications. By leveraging data objects, relationships, validation, and integration tools, you can ensure that your application meets business needs while maintaining data integrity and performance.
+
+## Practice Scenarios
+
+**Scenario: Loan Application System**
+
+A bank needs a loan application system. The BA defines data objects like **Customer**, **Loan**, and **Credit Score**. A **calculated value** determines loan eligibility based on income and credit score. **Validation rules** ensure the loan amount doesn’t exceed 5× income. **Default values** like “Loan Type = Personal” are set. Integration with a credit bureau is configured using REST connectors.
+
+**Key Concepts**: Data objects, calculated values, validation, default values, integration

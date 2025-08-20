@@ -79,3 +79,11 @@ Portals define the overall layout and navigation experience for users.
 
 ## Summary
 User Experience in Pega is about designing interfaces that support business goals and user needs. By leveraging views, controls, visibility settings, and portals, Business Architects can create applications that are both functional and user-friendly.
+
+## Practice Scenarios
+
+**Scenario: Customer Service Portal**
+
+A telecom company wants a portal for customer service reps. The BA configures a **user portal** with dashboards showing open cases and KPIs. **Views** are designed for collecting customer complaints and displaying resolution status. **Visibility settings** hide escalation options unless the case is overdue. **Control types** like dropdowns and autocomplete improve data entry.
+
+**Key Concepts**: Portals, views, visibility, control types
